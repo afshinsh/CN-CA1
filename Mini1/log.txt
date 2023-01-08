@@ -1,0 +1,89 @@
+Thu Jan  5 15:57:39 2023 --> server run
+Thu Jan  5 15:57:39 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Thu Jan  5 15:58:56 2023 --> recieve	user Mohsen	5
+Thu Jan  5 15:58:56 2023 --> send	331: User name okey, need password.	5
+Thu Jan  5 15:59:01 2023 --> recieve	pass 1234	5
+Thu Jan  5 15:59:01 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Thu Jan  5 15:59:16 2023 --> recieve	find ~/ -type f -name  "log.txt"	5
+Thu Jan  5 15:59:16 2023 --> shell	cd /home/mohamadkazem/Desktop/CA1 && find ~/ -type f -name  "log.txt"  > /home/mohamadkazem/Desktop/CA1/tmp.txt 2> /home/mohamadkazem/Desktop/CA1/error.txt	-1
+Thu Jan  5 15:59:16 2023 --> send	501: Syntax error in parameters or arguments.	5
+Thu Jan  5 20:41:51 2023 --> server run
+Thu Jan  5 20:41:51 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Thu Jan  5 23:43:35 2023 --> recieve	user Mohesn	5
+Thu Jan  5 23:43:35 2023 --> send	430: Invalid username or password.	5
+Thu Jan  5 23:43:43 2023 --> recieve	user Mohsen	5
+Thu Jan  5 23:43:43 2023 --> send	331: User name okey, need password.	5
+Thu Jan  5 23:43:50 2023 --> recieve	pass 1234	5
+Thu Jan  5 23:43:50 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Thu Jan  5 23:44:55 2023 --> recieve	upload	5
+Thu Jan  5 23:44:55 2023 --> recieve	/home/mohamadkazem/Desktop/CA1/log.txt	6
+Thu Jan  5 23:44:55 2023 --> send	226:Successful Upload.	5
+Thu Jan  5 23:50:57 2023 --> recieve		5
+Thu Jan  5 23:50:57 2023 --> shell	cd /home/mohamadkazem/Desktop/CA1 &&   > /home/mohamadkazem/Desktop/CA1/tmp.txt 2> /home/mohamadkazem/Desktop/CA1/error.txt	-1
+Fri Jan  6 00:11:04 2023 --> server run
+Fri Jan  6 00:11:04 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:11:28 2023 --> recieve	user Mod	5
+Fri Jan  6 00:11:28 2023 --> send	430: Invalid username or password.	5
+Fri Jan  6 00:11:33 2023 --> recieve	user Mohsen	5
+Fri Jan  6 00:11:33 2023 --> send	331: User name okey, need password.	5
+Fri Jan  6 00:11:39 2023 --> recieve	pass 1234	5
+Fri Jan  6 00:11:39 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Fri Jan  6 00:11:48 2023 --> recieve	upload	5
+Fri Jan  6 00:11:48 2023 --> recieve		6
+Fri Jan  6 00:11:48 2023 --> send	226:Successful Upload.	5
+Fri Jan  6 00:12:17 2023 --> recieve	upload	5
+Fri Jan  6 00:12:17 2023 --> recieve		6
+Fri Jan  6 00:12:17 2023 --> send	226:Successful Upload.	5
+Fri Jan  6 00:12:29 2023 --> recieve	upload	5
+Fri Jan  6 00:12:29 2023 --> recieve		6
+Fri Jan  6 00:12:29 2023 --> send	226:Successful Upload.	5
+Fri Jan  6 00:15:41 2023 --> server run
+Fri Jan  6 00:15:41 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:16:03 2023 --> recieve	user Mohsen	5
+Fri Jan  6 00:16:03 2023 --> send	331: User name okey, need password.	5
+Fri Jan  6 00:16:08 2023 --> recieve	pass 1234	5
+Fri Jan  6 00:16:08 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Fri Jan  6 00:16:35 2023 --> recieve	upload	5
+Fri Jan  6 00:19:48 2023 --> server run
+Fri Jan  6 00:19:48 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:20:37 2023 --> recieve	user Mohsen	5
+Fri Jan  6 00:20:37 2023 --> send	331: User name okey, need password.	5
+Fri Jan  6 00:20:43 2023 --> recieve	pass 1234	5
+Fri Jan  6 00:20:43 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Fri Jan  6 00:20:52 2023 --> recieve	upload	5
+Fri Jan  6 00:20:52 2023 --> recieve		6
+Fri Jan  6 00:20:52 2023 --> send	226:Successful Upload.	5
+Fri Jan  6 00:22:59 2023 --> recieve	user Moh	7
+Fri Jan  6 00:22:59 2023 --> send	430: Invalid username or password.	7
+Fri Jan  6 00:23:33 2023 --> server run
+Fri Jan  6 00:23:33 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:25:15 2023 --> recieve	user Moesn	5
+Fri Jan  6 00:25:15 2023 --> send	430: Invalid username or password.	5
+Fri Jan  6 00:25:20 2023 --> recieve	user Mohsen	5
+Fri Jan  6 00:25:20 2023 --> send	331: User name okey, need password.	5
+Fri Jan  6 00:25:24 2023 --> recieve	pass 1234	5
+Fri Jan  6 00:25:24 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Fri Jan  6 00:25:32 2023 --> recieve	upload	5
+Fri Jan  6 00:27:56 2023 --> server run
+Fri Jan  6 00:27:56 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:28:31 2023 --> server run
+Fri Jan  6 00:28:31 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:33:16 2023 --> server run
+Fri Jan  6 00:33:16 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:34:26 2023 --> server run
+Fri Jan  6 00:34:26 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:40:40 2023 --> server run
+Fri Jan  6 00:40:40 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:42:06 2023 --> server run
+Fri Jan  6 00:42:06 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:42:52 2023 --> server run
+Fri Jan  6 00:42:52 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:45:46 2023 --> server run
+Fri Jan  6 00:45:46 2023 --> shell	pwd > tmp.txt 2> error.txt	-1
+Fri Jan  6 00:45:57 2023 --> recieve	user Mohsen	5
+Fri Jan  6 00:45:57 2023 --> send	331: User name okey, need password.	5
+Fri Jan  6 00:46:04 2023 --> recieve	pass 1234	5
+Fri Jan  6 00:46:04 2023 --> send	230: User logged in, proceed. Logged out if appropriate.	5
+Fri Jan  6 00:46:14 2023 --> recieve	upload	5
+Fri Jan  6 00:46:14 2023 --> recieve	/home/mohamadkazem/.local/share/Trash/files/log.txt	6
+Fri Jan  6 00:46:14 2023 --> send	226:Successful Upload.	5
