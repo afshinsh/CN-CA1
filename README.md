@@ -1,26 +1,26 @@
 ## Mini 2
 
 
-# home :
+### home :
 ![My Image](images/Mini2_2.jpg)
 
-# render pdf:
+### render pdf:
 ![My Image](images/Mini2_1.jpg)
 
-# render gif:
+### render gif:
 ![My Image](images/Mini2_3.jpg)
 
-# render mp3:
+### render mp3:
 ![My Image](images/Mini2_4.jpg)
 
-# render jpeg:
+### render jpeg:
 ![My Image](images/Mini2_5.jpg)
 
-# 404 not found:
+### 404 not found:
 ![My Image](images/Mini2_7.jpg)
 
 
-# my function :
+### my function :
 ![My Image](images/Mini2_6.jpg)
 
 
