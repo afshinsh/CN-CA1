@@ -1,5 +1,23 @@
 ## Mini 2
 
+![My Image](images/Mini2_8.jpg)
+
+
+![My Image](images/Mini2_9.jpg)
+
+
+![My Image](images/Mini2_10.jpg)
+
+
+![My Image](images/Mini2_11.jpg)
+
+
+![My Image](images/Mini2_12.jpg)
+
+
+![My Image](images/Mini2_13.jpg)
+
+
 
 ### home :
 ![My Image](images/Mini2_2.jpg)
