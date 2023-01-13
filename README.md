@@ -174,16 +174,16 @@
 ### result :
 
 #### compiling :
-![My Image](images/mini3_1.jpg)
+![My Image](images/mini3_1.png)
 
 
 #### connecting to server :
-![My Image](images/mini3_2.jpg)
+![My Image](images/mini3_2.png)
 
 
 #### list :
-![My Image](images/mini3_3.jpg)
+![My Image](images/mini3_3.png)
 
 
 #### send :
-![My Image](images/mini3_4.jpg)
+![My Image](images/mini3_4.png)
