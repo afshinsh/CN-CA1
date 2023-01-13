@@ -167,3 +167,23 @@
 
 ### examples :
 
+## Mini 3
+
+### code : 
+
+### result :
+
+#### compiling :
+![My Image](images/mini3_1.jpg)
+
+
+#### connecting to server :
+![My Image](images/mini3_2.jpg)
+
+
+#### list :
+![My Image](images/mini3_3.jpg)
+
+
+#### send :
+![My Image](images/mini3_4.jpg)
