@@ -141,13 +141,7 @@ public:
 		addCommand("user", "430: Invalid username or password.", "331: User name okey, need password.", 1, false);
 		addCommand("pass", "430: Invalid username or password.", "230: User logged in, proceed. Logged out if appropriate.", 1, false);
 		addCommand("quit", "", "221: Successful Quit.", 0, false);
-		//addCommand("pwd", "550: File unavailble.", "257: ", 0, false); //
-		//addCommand("mkdir", "550: File unavailble.", "257: ", 1, false); //
-		//addCommand("rm", "550: File unavailble.", "250: ", 1, false); //
-		//addCommand("ls", "", "226: List transfer done.", 0, true);
 		addCommand("cat", "550: File unavailble.", "226:Successful Download.", 1, true);
-		//addCommand("cd", "501: Syntax error in parameters or arguments.", "250: Successful change.", 1, false);
-		//addCommand("mv", "550: File unavailble.", "250: Successful change.", 2, false);
 		addCommand("help", "", help_description, 0, false);
 		addCommand("upload", "550: File unavailble.", "226:Successful Upload.", 1, false);
 	}
@@ -244,9 +238,7 @@ User login(int fd) {
     string message, command_name;
     while (true)
     {
-        cout << "fd: " << fd << endl;
         message = custom_read(fd);
-        cout << "message: " << message << endl;
         command_name = message.substr(0, message.find(' '));
         message = message.substr(message.find(' ')+1, message.length());
         Command command = CommandRepository::findCommandByNameInProtocol(command_name);
@@ -254,7 +246,7 @@ User login(int fd) {
             try
             {
                 User user = UserRepository::findUserByName(message);
-                cout << message << " 255" << endl;
+                
                 custom_send(command.success_message, fd);
                 while(true){
                     message = custom_read(fd);
@@ -314,7 +306,7 @@ void handle_client(int command_fd, int data_fd) {
         message = custom_read(command_fd) + ' ';
         command_name = message.substr(0, message.find(' '));
         Command command = CommandRepository::findCommandByNameInProtocol(command_name);
-		cout << "here 314" << endl;
+		
 
         if (command.name == "quit") {
             custom_send(command.success_message, command_fd);
@@ -326,12 +318,12 @@ void handle_client(int command_fd, int data_fd) {
         } else if(command.name == "upload"){
                 string filePath = custom_read(data_fd);
                 string copyCommand = "cp -i " + filePath + " /home/mohamadkazem/Desktop/files";
-                cout << copyCommand << endl;
+                
                 system(copyCommand.c_str());
                 custom_send(command.success_message, command_fd);
         } 
         else {            
-			cout << "here 331" << endl;
+		
 
             string result = run_in_shell("cd " + current_path + " && " + message);
             string command_result = command.success_message;
