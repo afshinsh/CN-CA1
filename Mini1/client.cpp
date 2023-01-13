@@ -43,13 +43,7 @@ public:
 		addCommand("user", "user", 1, false);
 		addCommand("pass", "pass", 1, false);
 		addCommand("quit", "quit", 0, false);
-		// addCommand("pwd", "pwd", 0, false);
-		// addCommand("mkd", "mkdir", 1, false);
-		// addCommand("dele", "rm -r", 1, false);
-		// addCommand("ls", "ls", 0, true);
 		addCommand("retr", "cat", 1, true);
-		// addCommand("cwd", "cd", 1, false);
-		// addCommand("rename", "mv", 2, false);
 		addCommand("help", "help", 0, false);
 		addCommand("upload", "find ~/ -type f -name ", 1, false);
 	}
@@ -162,12 +156,10 @@ int main(int argc, char const *argv[]) {
 		try {
 			Command command = CommandRepository::findCommandByNameForUser(command_name_for_user);
 			string command_in_protocol = command.name_in_protocol;
-			cout << "here 165" << endl;
 			for (int i = 0; i < command.number_of_args; i++) {
 				cin >> arg;
 				command_in_protocol += " " + arg;
 			}
-			cout << "here 170" << endl;
 
 			if(command.name_for_user == "upload"){
 				string result = run_in_shell(command_in_protocol);
@@ -180,14 +172,8 @@ int main(int argc, char const *argv[]) {
 				
 				continue;
 			}
-			cout << "here 183" << endl;
-
 			custom_send(command_in_protocol, command_fd);
-			cout << "here 186" << endl;
-
-			cout << custom_read(command_fd) << '\n';
-			cout << "here 189" << endl;
-
+			
 			if (command.use_data_channel) {
 				cout << custom_read(data_fd) << '\n';
 			}
