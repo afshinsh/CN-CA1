@@ -171,6 +171,24 @@
 
 ### code : 
 
+#### main:
+![My Image](images/mini3_main.png)
+
+#### server:
+![My Image](images/mini3_server_1.png)
+![My Image](images/mini3_server_2.png)
+
+#### client:
+![My Image](images/mini3_client_1.png)
+
+![My Image](images/mini3_client_2.png)
+
+#### client main:
+![My Image](images/mini3_client_main.png)
+
+#### makefile:
+![My Image](images/mini3_makefile.png)
+
 ### result :
 
 #### compiling :
