@@ -168,16 +168,23 @@
 ### examples :
 
 ## Mini 3
-
+در این بخش میخواهیم اتصال بین چند کلاینت با یک سرور از طریق‌‌‌‌‌‌ TCP را برقرار کنیم. 
 ### code : 
 
 #### main:
-![My Image](images/mini3_main.png)
+![My Image](images/mini3_main.png)       
+ابتدا TCP سوکت را پیاده سازی میکنیم.
+سپس سوکت را به آدرس سرور بایند میکنیم.
+حال باید سرور را منتظر اتصال کلاینت نگه داریم.
+بعد از این که اتصال بین کلاینت ها و سرور یرقرار شد کلاینت ها میتوانند شروع به ارسال و دریافت پیام کنند.
+
 
 #### server:
 ![My Image](images/mini3_server_1.png)
 ![My Image](images/mini3_server_2.png)
 
+برای کارکرد کلاینت ابتدا سوکت را ایجاد میکنیم .
+سپس از طریق آن به سرور متصل میشویم .
 #### client:
 ![My Image](images/mini3_client_1.png)
 
@@ -185,7 +192,7 @@
 
 #### client main:
 ![My Image](images/mini3_client_main.png)
-
+کد این بخش به وسیله makefile کامپایل میشود.
 #### makefile:
 ![My Image](images/mini3_makefile.png)
 
